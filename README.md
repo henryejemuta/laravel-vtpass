@@ -1,13 +1,13 @@
 # Laravel VTPass
 
 [![Build Status](https://travis-ci.org/orobogenius/sansdaemon.svg?branch=master)](https://travis-ci.org/orobogenius/sansdaemon)
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/henryejemuta/laravel-vTPass.svg?style=flat-square)](https://packagist.org/packages/henryejemuta/laravel-vTPass)
-[![Latest Stable Version](https://poser.pugx.org/henryejemuta/laravel-vTPass/v/stable)](https://packagist.org/packages/henryejemuta/laravel-vTPass)
-[![Total Downloads](https://poser.pugx.org/henryejemuta/laravel-vTPass/downloads)](https://packagist.org/packages/henryejemuta/laravel-vTPass)
-[![License](https://poser.pugx.org/henryejemuta/laravel-vTPass/license)](https://packagist.org/packages/henryejemuta/laravel-vTPass)
-[![Quality Score](https://img.shields.io/scrutinizer/g/henryejemuta/laravel-vTPass.svg?style=flat-square)](https://scrutinizer-ci.com/g/henryejemuta/laravel-vTPass)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/henryejemuta/laravel-vtpass.svg?style=flat-square)](https://packagist.org/packages/henryejemuta/laravel-vtpass)
+[![Latest Stable Version](https://poser.pugx.org/henryejemuta/laravel-vtpass/v/stable)](https://packagist.org/packages/henryejemuta/laravel-vtpass)
+[![Total Downloads](https://poser.pugx.org/henryejemuta/laravel-vtpass/downloads)](https://packagist.org/packages/henryejemuta/laravel-vtpass)
+[![License](https://poser.pugx.org/henryejemuta/laravel-vtpass/license)](https://packagist.org/packages/henryejemuta/laravel-vtpass)
+[![Quality Score](https://img.shields.io/scrutinizer/g/henryejemuta/laravel-vtpass.svg?style=flat-square)](https://scrutinizer-ci.com/g/henryejemuta/laravel-vtpass)
 
-A laravel package to seamlessly integrate vTPass api within your laravel application
+A laravel package to seamlessly integrate VTPass api within your laravel application
 
 ## What is VTPass
 VTPass is a platform through which you can make convenient payment for your day to day services like Phone Airtime Recharge, Internet Data bundle subscription, Cable TV subscription such as DTSV, GOTV, Startimes, Electricity bills (PHCN) and many other services.
@@ -32,7 +32,7 @@ php artisan vtpass:init
 
 
 ## Usage
-> To use the vTPass package you must import the VTPass Facades with the import statement below; Other Classes import is based on your specific usage and would be highlighted in their corresponding sections.
+> To use the VTPass package you must import the VTPass Facades with the import statement below; Other Classes import is based on your specific usage and would be highlighted in their corresponding sections.
 >
 ``` php
 ...

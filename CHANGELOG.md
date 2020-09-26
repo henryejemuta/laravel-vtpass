@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to `laravel-vTPass` will be documented in this file
+All notable changes to `laravel-vtpass` will be documented in this file
 
 - Release
 ## 1.0.0 2020-09-11 Fix issue calculateTransactionHash #3 and update to work with Laravel 8

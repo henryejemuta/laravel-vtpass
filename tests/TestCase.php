@@ -1,7 +1,7 @@
 <?php
 /**
  * Created By: Henry Ejemuta
- * Project: laravel-vTPass
+ * Project: laravel-vtpass
  * Class Name: TestCase.php
  * Date Created: 7/13/20
  * Time Created: 6:52 PM

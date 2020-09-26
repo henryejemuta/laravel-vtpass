@@ -1,7 +1,7 @@
 <?php
 /**
  * Created By: Henry Ejemuta
- * Project: laravel-vTPass
+ * Project: laravel-vtpass
  * Class Name: InstallLaravelVTPass.php
  * Date Created: 7/13/20
  * Time Created: 7:26 PM
@@ -58,7 +58,7 @@ class InstallLaravelVTPass extends Command
             $this->info("Now updating $key value in your .env to $value ...");
             // update existing entry
             file_put_contents($path, str_replace(
-                "$key=".$this->laravel['config']["vTPass.$configKey"],
+                "$key=".$this->laravel['config']["vtpass.$configKey"],
                 "$key=$value", file_get_contents($path)
             ));
         }

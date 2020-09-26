@@ -3,8 +3,8 @@
  * Created By: Henry Ejemuta
  * Email: henry.ejemuta@gmail.com
  * GitHub: https://github.com/henryejemuta
- * Project: laravel-vTPass
- * Class Name: vTPass.php
+ * Project: laravel-vtpass
+ * Class Name: VTPass.php
  * Date Created: 7/13/20
  * Time Created: 3:43 PM
  */
@@ -15,7 +15,7 @@ return [
      * Base Url
      * ---------------------------------------------------------------
      *
-     * The vTPass base url upon which others is based, if not set it's going to use the sandbox version
+     * The VTPass base url upon which others is based, if not set it's going to use the sandbox version
      */
     'base_url' => env('VTPASS_BASE_URL', 'https://sandbox.vtpass.com/api'),
 
@@ -44,7 +44,7 @@ return [
      * Contract Code
      * ---------------------------------------------------------------
      *
-     * This can be gotten from your vTPass dashboard, if not set the sandbox version would be used
+     * This can be gotten from your VTPass dashboard, if not set the sandbox version would be used
      */
     'contract_code' => env('VTPASS_CONTRACT_CODE', '4934121686'),
 

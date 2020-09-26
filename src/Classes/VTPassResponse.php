@@ -153,10 +153,8 @@ class VTPassResponse
         return $this->body;
     }
 
-    /**
-     * @return object
-     */
-    public function getAdditionalStatus(): object
+
+    public function getAdditionalStatus()
     {
         return (object)($this->additionalStatus);
     }

@@ -124,7 +124,7 @@ class VTPassResponse
      * Determine if this ise a success response object
      * @return bool
      */
-    public function successful():bool
+    public function successful(): bool
     {
         return !($this->hasError);
     }
@@ -146,15 +146,17 @@ class VTPassResponse
     }
 
     /**
-     * @return object
+     * @return object|null
      */
-    public function getBody(): object
+    public function getBody()
     {
-        return $this->body;
+        return is_array($this->body) ? ((object)$this->body) : $this->body;
     }
 
-
-    public function getAdditionalStatus()
+    /**
+     * @return object
+     */
+    public function getAdditionalStatus(): object
     {
         return (object)($this->additionalStatus);
     }

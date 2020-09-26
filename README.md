@@ -1,6 +1,6 @@
 # Laravel VTPass
 
-[![Build Status](https://travis-ci.org/orobogenius/sansdaemon.svg?branch=master)](https://travis-ci.org/orobogenius/sansdaemon)
+[![Build Status](https://travis-ci.org/henryejemuta/laravel-vtpass.svg?branch=master)](https://travis-ci.org/henryejemuta/laravel-vtpass)
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/henryejemuta/laravel-vtpass.svg?style=flat-square)](https://packagist.org/packages/henryejemuta/laravel-vtpass)
 [![Latest Stable Version](https://poser.pugx.org/henryejemuta/laravel-vtpass/v/stable)](https://packagist.org/packages/henryejemuta/laravel-vtpass)
 [![Total Downloads](https://poser.pugx.org/henryejemuta/laravel-vtpass/downloads)](https://packagist.org/packages/henryejemuta/laravel-vtpass)

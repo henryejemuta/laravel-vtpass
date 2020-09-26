@@ -92,10 +92,10 @@ class VTPassResponse
     /**
      * VTPassResponse constructor.
      * @param string $code
-     * @param object|null $responseBody
+     * @param object|array|null $responseBody
      * @throws VTPassErrorException
      */
-    public function __construct(string $code, object $responseBody = null)
+    public function __construct(string $code, $responseBody = null)
     {
         $this->body = $responseBody;
         $this->additionalStatus = [];

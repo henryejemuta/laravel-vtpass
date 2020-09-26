@@ -92,6 +92,25 @@ class VTPass
 
 
     /**
+     * Using a GET method, the VTpass service categories can be accessed with the endpoint below:
+     * @return VTPassResponse
+     *
+     * @throws VTPassErrorException
+     */
+    public function getServicesCategories()
+    {
+        $endpoint = "{$this->baseUrl}/service-categories";
+
+        $response = $this->withBasicAuth()->get($endpoint);
+
+        $responseObject = json_decode($response->body());
+        if (isset($responseObject->response_description) && isset($responseObject->content))
+            return new VTPassResponse($responseObject->response_description, $responseObject->content);
+        return new VTPassResponse(-1, null);
+    }
+
+
+    /**
      * This help in getting the available service IDs on VTpass RESTful API.
      * Using a GET method, the VTpass service IDs for Data [for instance] can be accessed with the endpoint below:
      * @param $serviceCategoryIdentifier
@@ -126,25 +145,6 @@ class VTPass
 
         $responseObject = json_decode($response->body());
 
-        if (isset($responseObject->response_description) && isset($responseObject->content))
-            return new VTPassResponse($responseObject->response_description, $responseObject->content);
-        return new VTPassResponse(-1, null);
-    }
-
-
-    /**
-     * Using a GET method, the VTpass service categories can be accessed with the endpoint below:
-     * @return VTPassResponse
-     *
-     * @throws VTPassErrorException
-     */
-    public function getServicesCategories()
-    {
-        $endpoint = "{$this->baseUrl}/service-categories";
-
-        $response = $this->withBasicAuth()->get($endpoint);
-
-        $responseObject = json_decode($response->body());
         if (isset($responseObject->response_description) && isset($responseObject->content))
             return new VTPassResponse($responseObject->response_description, $responseObject->content);
         return new VTPassResponse(-1, null);

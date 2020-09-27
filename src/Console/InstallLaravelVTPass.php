@@ -42,8 +42,8 @@ class InstallLaravelVTPass extends Command
             $this->info('Now writing .env file with VTPass Sandbox credential for you to modify...');
 
             $this->writeChanges($path, "VTPASS_BASE_URL", "base_url", 'https://sandbox.vtpass.com/api');
-            $this->writeChanges($path, "VTPASS_USERNAME", "username", "henry.ejemuta@gmail.com'");
-            $this->writeChanges($path, "VTPASS_PASSWORD", "password", "sandbox");
+            $this->writeChanges($path, "VTPASS_USERNAME", "username", "REPLACE_WITH_YOUR_EMAIL");
+            $this->writeChanges($path, "VTPASS_PASSWORD", "password", "REPLACE_WITH_YOUR_PASSWORD");
 
         }
 

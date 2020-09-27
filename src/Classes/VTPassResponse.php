@@ -99,9 +99,9 @@ class VTPassResponse
     {
         $this->body = $responseBody;
         $this->additionalStatus = [];
-        $this->title = "Failed Connection";
-        $this->message = "Unable to communicate with VTPass server";
-        $this->hasError = true;
+        $this->title = "Empty Response";
+        $this->message = "Empty Response from VTPass server";
+        $this->hasError = false;
 
         if (isset(VTPassResponse::RESPONSE["$code"])) {
             $msg = VTPassResponse::RESPONSE["$code"];
@@ -146,11 +146,11 @@ class VTPassResponse
     }
 
     /**
-     * @return object|null
+     * @return object|array|null
      */
     public function getBody()
     {
-        return is_array($this->body) ? ((object)$this->body) : $this->body;
+        return $this->body;
     }
 
     /**
@@ -159,6 +159,11 @@ class VTPassResponse
     public function getAdditionalStatus(): object
     {
         return (object)($this->additionalStatus);
+    }
+
+    public function __toString()
+    {
+        return json_encode($this->body);
     }
 
 

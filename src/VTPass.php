@@ -436,4 +436,20 @@ class VTPass
     {
         return $this->purchaseProduct($requestId, $serviceID, $customerMeterNumber, $type, $phoneNumber, $amount);
     }
+
+
+    private function withOAuth2()
+    {
+        return Http::withToken("594b2599866f12a60be8af8ce7dec011d532681683769c15e205b360907ef05d");
+    }
+
+    public function gecharlGetBal()
+    {
+        $this->withOAuth2();
+        $response = $this->withOAuth2()->get("https://www.gecharl.com/api/account?username=henryakin15@gmail.com");
+
+        return json_decode($response->body());
+    }
+
+
 }

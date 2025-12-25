@@ -16,6 +16,11 @@ Create a VTPass Account [Sign Up](https://bit.ly/3kFIfns).
 
 Look up VTPass API Documentation [API Documentation](https://www.vtpass.com/documentation/introduction/).
 
+
+## Non-Laravel Usage
+
+If you are using this package in a non-laravel project, or you need a framework agnostic usage of this package, using the vanilla php version [php-vtpass-vtu](https://github.com/henryejemuta/php-vtpass-vtu) is suggested.
+
 ## Installation
 
 You can install the package via composer:
